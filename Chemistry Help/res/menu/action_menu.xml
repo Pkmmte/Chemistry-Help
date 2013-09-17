@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Visible section of action bar -->
+	<item
+		android:id="@+id/Warning_Label"
+		android:title=""
+		android:showAsAction="always"
+		android:icon="@drawable/warning"
+		android:visible="false"/>
+	
+	<item
+		android:id="@+id/AddBookmark_Label"
+		android:title="Add Bookmark"
+		android:showAsAction="ifRoom"
+		android:icon="@drawable/addbookmark_icon"/>
+	
+	<item
+		android:id="@+id/Bookmarks_Label"
+		android:title="Bookmarks"
+		android:showAsAction="always"
+		android:icon="@drawable/bookmarks_icon"/>
+
+	<!-- overflow section of action bar -->
+	
+	<item
+		android:id="@+id/Settings_Label"
+		android:title="Settings"/>
+		
+	 <!-- 
+	<item
+		android:id="@+id/Help_Label"
+		android:title="Help"/>
+	
+	<item
+		android:id="@+id/About_Label"
+		android:title="About"/>
+	-->
+	
+	<item
+		android:id="@+id/Debug_Label"
+		android:title="Debug"/>
+	<item
+		android:id="@+id/Exit_Label"
+		android:title="Exit"/>
+
+</menu>

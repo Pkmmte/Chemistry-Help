@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src\com\pk\chemhelp\Convert.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src\com\pk\chemhelp\Debug.java" />
+    </issue>
+</lint>

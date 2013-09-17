@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Visible section of action bar -->
+	
+	<item
+		android:id="@+id/Bookmarks_Label"
+		android:title="Bookmarks"
+		android:showAsAction="always"
+		android:icon="@drawable/bookmarks_icon"/>
+
+	<!-- overflow section of action bar -->
+	
+	<item
+		android:id="@+id/Settings_Label"
+		android:title="Settings"/>
+	
+	<item
+		android:id="@+id/Debug_Label"
+		android:title="Debug"/>
+	<item
+		android:id="@+id/Exit_Label"
+		android:title="Exit"/>
+
+</menu>

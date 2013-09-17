@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chemistry Help</string>
+    <string name="convertTopic_prompt">Convert&#8230;</string>
+
+    <string-array name="Topic_array">
+        <item></item>
+        <item>Volume</item>
+        <item>Pressure</item>
+        <item>Temperature</item>
+    </string-array>
+    <string-array name="UnitTemperature_array">
+        <item>K</item>
+        <item>C</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="UnitPressure_array">
+        <item>atm</item>
+        <item>mmHg</item>
+        <item>torr</item>
+        <item>kPa</item>
+    </string-array>
+    <string-array name="UnitVolume_array">
+        <item>L</item>
+        <item>mL</item>
+        <item>g</item>
+    </string-array>
+    <string-array name="UnitMole_array">
+        <item>mol</item>
+    </string-array>
+    <string-array name="DecimalPoints_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="blank_array">
+        <item></item>
+    </string-array>
+
+    <string name="blankForN">Leave blank to solve N</string>
+    <string name="blankForV">Leave blank to solve V</string>
+    <string name="blankForP">Leave blank to solve P</string>
+    <string name="blankForT">Leave blank to solve T</string>
+    <string name="blankForV1">Leave blank to solve V1</string>
+    <string name="blankForP1">Leave blank to solve P1</string>
+    <string name="blankForT1">Leave blank to solve T1</string>
+    <string name="blankForV2">Leave blank to solve V2</string>
+    <string name="blankForP2">Leave blank to solve P2</string>
+    <string name="blankForT2">Leave blank to solve T2</string>
+    <string name="saveButton">Save</string>
+    <string name="MENU_GasLaws">Gas Laws</string>
+    <string name="MENU_Molarity">Molarity</string>
+    <string name="MENU_Settings">Settings</string>
+    <string name="MENU_Convert">Convert</string>
+    <string name="MENU_Thermochemistry">Heat Chemistry</string>
+    <string name="MENU_ChemicalSearch">Chemical Search</string>
+
+    <string-array name="ChemicalFormula_array">
+        <item>Ac</item>
+        <item>Ag</item>
+        <item>Al</item>
+        <item>Am</item>
+        <item>Ar</item>
+        <item>As</item>
+        <item>At</item>
+        <item>Au</item>
+        <item>B</item>
+        <item>Ba</item>
+        <item>Be</item>
+        <item>Bh</item>
+        <item>Bi</item>
+        <item>Bk</item>
+        <item>Br</item>
+        <item>C</item>
+        <item>Ca</item>
+        <item>Cd</item>
+        <item>Ce</item>
+        <item>Cf</item>
+        <item>Cl</item>
+        <item>Cm</item>
+        <item>Co</item>
+        <item>Cn</item>
+        <item>Cr</item>
+        <item>Cs</item>
+        <item>Cu</item>
+        <item>Db</item>
+        <item>Ds</item>
+        <item>Dy</item>
+        <item>Er</item>
+        <item>Es</item>
+        <item>Eu</item>
+        <item>F</item>
+        <item>Fe</item>
+        <item>Fm</item>
+        <item>Fr</item>
+        <item>Ga</item>
+        <item>Gd</item>
+        <item>Ge</item>
+        <item>H</item>
+        <item>He</item>
+        <item>Hf</item>
+        <item>Hg</item>
+        <item>Ho</item>
+        <item>Hs</item>
+        <item>I</item>
+        <item>In</item>
+        <item>Ir</item>
+        <item>K</item>
+        <item>Kr</item>
+        <item>La</item>
+        <item>Li</item>
+        <item>Lr</item>
+        <item>Lu</item>
+        <item>Md</item>
+        <item>Mg</item>
+        <item>Mn</item>
+        <item>Mo</item>
+        <item>Mt</item>
+        <item>N</item>
+        <item>Na</item>
+        <item>Nb</item>
+        <item>Nd</item>
+        <item>Ne</item>
+        <item>Ni</item>
+        <item>No</item>
+        <item>Np</item>
+        <item>O</item>
+        <item>Os</item>
+        <item>P</item>
+        <item>Pa</item>
+        <item>Pb</item>
+        <item>Pd</item>
+        <item>Pm</item>
+        <item>Po</item>
+        <item>Pr</item>
+        <item>Pt</item>
+        <item>Pu</item>
+        <item>Ra</item>
+        <item>Rb</item>
+        <item>Re</item>
+        <item>Rf</item>
+        <item>Rg</item>
+        <item>Rh</item>
+        <item>Rn</item>
+        <item>Ru</item>
+        <item>S</item>
+        <item>Sb</item>
+        <item>Sc</item>
+        <item>Se</item>
+        <item>Sg</item>
+        <item>Si</item>
+        <item>Sm</item>
+        <item>Sn</item>
+        <item>Sr</item>
+        <item>Ta</item>
+        <item>Tb</item>
+        <item>Tc</item>
+        <item>Te</item>
+        <item>Th</item>
+        <item>Ti</item>
+        <item>Tl</item>
+        <item>Tm</item>
+        <item>U</item>
+        <item>Uuh</item>
+        <item>Uun</item>
+        <item>Uuo</item>
+        <item>Uup</item>
+        <item>Uuq</item>
+        <item>Uus</item>
+        <item>Uut</item>
+        <item>Uuu</item>
+        <item>V</item>
+        <item>W</item>
+        <item>Xe</item>
+        <item>Y</item>
+        <item>Yb</item>
+        <item>Zn</item>
+        <item>Zr</item>
+    </string-array>
+    <string-array name="ChemicalName_array">
+        <item>Actinium</item>
+        <item>Aluminum</item>
+        <item>Americium</item>
+        <item>Antimony</item>
+        <item>Argon</item>
+        <item>Arsenic</item>
+        <item>Astatine</item>
+        <item>Barium</item>
+        <item>Berkelium</item>
+        <item>Beryllium</item>
+        <item>Bismuth</item>
+        <item>Boron</item>
+        <item>Bromine</item>
+        <item>Cadmium</item>
+        <item>Calcium</item>
+        <item>Californium</item>
+        <item>Carbon</item>
+        <item>Cerium</item>
+        <item>Cesium</item>
+        <item>Chlorine</item>
+        <item>Chromium</item>
+        <item>Cobalt</item>
+        <item>Copper</item>
+        <item>Curium</item>
+        <item>Darmstadtium</item>
+        <item>Dubnium</item>
+        <item>Dysprosium</item>
+        <item>Einsteinium</item>
+        <item>Erbium</item>
+        <item>Europium</item>
+        <item>Fermium</item>
+        <item>Fluorine</item>
+        <item>Francium</item>
+        <item>Gadolinium</item>
+        <item>Gold</item>
+        <item>Hafnium</item>
+        <item>Hahnium</item>
+        <item>Hassium</item>
+        <item>Helium</item>
+        <item>Holmium</item>
+        <item>Hydrogen</item>
+        <item>Indium</item>
+        <item>Iodine</item>
+        <item>Iridium</item>
+        <item>Iron</item>
+        <item>Krypton</item>
+        <item>Lanthanum</item>
+        <item>Lawrencium</item>
+        <item>Lead</item>
+        <item>Lithium</item>
+        <item>Lutetium</item>
+        <item>Magnesium</item>
+        <item>Manganese</item>
+        <item>Meitnerium</item>
+        <item>Mendelevium</item>
+        <item>Mercury</item>
+        <item>Molybdenum</item>
+        <item>Neilsborium</item>
+        <item>Neodymium</item>
+        <item>Neon</item>
+        <item>Neptunium</item>
+        <item>Nickel</item>
+        <item>Niobium</item>
+        <item>Nitrogen</item>
+        <item>Nobelium</item>
+        <item>Osmium</item>
+        <item>Oxygen</item>
+        <item>Palladium</item>
+        <item>Phosphorus</item>
+        <item>Platinum</item>
+        <item>Plutonium</item>
+        <item>Polonium</item>
+        <item>Potassium</item>
+        <item>Praseodymium</item>
+        <item>Promethium</item>
+        <item>Protactinium</item>
+        <item>Radium</item>
+        <item>Radon</item>
+        <item>Rhenium</item>
+        <item>Rhodium</item>
+        <item>Rubidium</item>
+        <item>Ruthenium</item>
+        <item>Rutherfordium</item>
+        <item>Samarium</item>
+        <item>Scandium</item>
+        <item>Seaborgium</item>
+        <item>Selenium</item>
+        <item>Silicon</item>
+        <item>Silver</item>
+        <item>Sodium</item>
+        <item>Strontium</item>
+        <item>Sulfur</item>
+        <item>Tantalum</item>
+        <item>Technetium</item>
+        <item>Tellurium</item>
+        <item>Terbium</item>
+        <item>Thalium</item>
+        <item>Thorium</item>
+        <item>Thulium</item>
+        <item>Tin</item>
+        <item>Titanium</item>
+        <item>Tungsten</item>
+        <item>Uranium</item>
+        <item>Vanadium</item>
+        <item>Xenon</item>
+        <item>Ytterbium</item>
+        <item>Yttrium</item>
+        <item>Zinc</item>
+        <item>Zirconium</item>
+    </string-array>
+
+    <string name="PlaceHolder_VALUE">Value</string>
+    <string name="dialogUpdated_Close">Got It!</string>
+    <string name="dialogUpdate_Update5Content">- Additional controls in gas laws \n- Rearranged control bar in gas laws \n- Conversion fixes in gas laws \n- Units are now shown in results \n- Warning disappears after exiting application</string>
+    <string name="dialogUpdate_Update5Date">July 2, 2012</string>
+    <string name="dialogUpdate_Update5">Version 0.36</string>
+    <string name="dialogUpdate_Update4Content">- Added periodic table. [New] \n- Added molarity. [New] \n- Redesigned Settings UI and added option to keep same units under each category. \n- Convert now automatically converts what you input without the need to click submit. \n- Added Swap, Copy, and Clear to conversions. \n- Simplified use of convert.</string>
+    <string name="dialogUpdate_Update4Date">July 8, 2012</string>
+    <string name="dialogUpdate_Update4">Version 0.4</string>
+    <string name="dialogUpdate_Update3Content">- [New] Added molarity. \n- [New]Smart Actions for gas laws. (Enable them via settings menu) \n- [New] Conversions settings \n- UI changes in gas laws \n- More accurate information \n- Code optomizations</string>
+    <string name="dialogUpdate_Update3Date">August 1, 2012</string>
+    <string name="dialogUpdate_Update3">Version 0.5</string>
+    <string name="dialogUpdate_Update2Content">- [New] Quick bookmarks! \n- [New] Improved UI. \n- [New] Ability to show work on gas laws. \n- Fixed rare force close issue on Molar Mass. \n- Fixed Empirical formula calculations on Molar Mass. \n- Fixed Gas Law solving related issues. \n- Name corrections. \n- Brought back Holo theme on older devices. (Sorry about that)</string>
+    <string name="dialogUpdate_Update2Date">August 19, 2012</string>
+    <string name="dialogUpdate_Update2">Version 0.6</string>
+    <string name="dialogUpdate_Update1Content">- [New] Quiz Mode! \n- [New] Tutorials to help you study! \n- [New] Element List tab in Periodic Table! \n- [New] Element View cards. \n- [New] App To SD Support! \n- [Improved] Periodic Table. \n- [Improved] Update Notifications. \n- [Improved] Much better performance. \n- [Fixed] Solved convert crash issue. \n- [Fixed] Solved molar mass crash issue. \n- [Fixed] Solved gas laws crash issue.</string>
+    <string name="dialogUpdate_Update1Date">December 21, 2012</string>
+    <string name="dialogUpdate_Update1">Version 0.7</string>
+    <string name="dialogStartup_Text1">This app was created in hopes to assist you in your chemistry needs. It\'s meant to be used as reference but you may use it as you wish.</string>
+    <string name="dialogStartup_Text2">We are currently in a beta stage so please report any bugs you might find. \n\nThere will be many new features in future updates such as support for more content such as pH, tablet UI, and more units.</string>
+    <string name="dialogStartup_Close">Got It!</string>
+    <string name="gasLaw_BoylesLaw">Boyle\'s Law</string>
+    <string name="gasLaw_CharlesLaw">Charles\' Law</string>
+    <string name="gasLaw_IdealGasLaw">Ideal Gas Law</string>
+    <string name="gasLaw_GayLussacsLaw">Gay Lussac\'s Law</string>
+    <string name="gasLaw_CombinedGasLaw">Combined Gas Law</string>
+    <string name="close">Close</string>
+    <string name="debug_TestError">Test Error</string>
+    <string name="debug_ClearData">Clear Data</string>
+    <string name="debug_ForceStop">Force Stop</string>
+	<string name="debug_ActivatePro">Activate Pro</string>
+    <string name="MENU_PeriodicTable">Periodic Table</string>
+    <string name="MOLARMASS_Calculate">Calculate</string>
+    <string name="MOLARMASS_GramsPerMole">Grams per Mole</string>
+    <string name="MOLARMASS_MolesToMass">Moles to Mass</string>
+    <string name="MOLARMASS_MassToMoles">Mass to Moles</string>
+    <string name="MOLARMASS_ExtraInfo">Show Extra Information</string>
+    <string name="MOLARMASS_EnterMolecule">Enter the Molecule   (CASE SENSITIVE)</string>
+    <string name="MOLARMASS_Result">Result</string>
+    <string name="CONVERT_Convert">Convert</string>
+    <string name="CONVERT_Clear">Clear</string>
+    <string name="CONVERT_Blank">Leave this field blank</string>
+    <string name="CONVERT_To">to</string>
+    <string name="CONVERT_EnterNumber">Enter number</string>
+    <string name="CONVERT_Swap">Swap</string>
+    <string name="image_icon">Image Icon</string>
+    <string name="dialogFormula_Close">Close</string>
+    <string name="GASLAW_EnterVariables">Enter your variable values.</string>
+    <string name="GASLAW_Reminder">Make sure to leave one field blank.</string>
+    <string name="GASLAW_Clear">Clear</string>
+    <string name="GASLAW_Solve">Solve</string>
+    <string name="GASLAW_Formula">Formula</string>
+	<string name="GASLAW_N">(N) Moles</string>
+    <string name="GASLAW_P">(P) Pressure</string>
+    <string name="GASLAW_V">(V) Volume</string>
+    <string name="GASLAW_T">(T) Temperature</string>
+    <string name="GASLAW_m">(m) Mass</string>
+    <string name="GASLAW_V1">(V1) Initial Volume</string>
+    <string name="GASLAW_P1">(P1) Initial Pressure</string>
+	<string name="GASLAW_T1">(T1) Initial Temperature</string>
+    <string name="GASLAW_V2">(V2) Final Volume</string>
+    <string name="GASLAW_P2">(P2) Final Pressure</string>
+    <string name="GASLAW_T2">(T2) Final Temperature</string>
+    <string name="DialogANSWER_Result">"Result: "</string>
+    <string name="DialogANSWER_Close">Close</string>
+    <string name="GASLAW_SolvingForN">Solving for N</string>
+    <string name="GASLAW_SolvingForV">Solving for V</string>
+    <string name="GASLAW_SolvingForP">Solving for P</string>
+    <string name="GASLAW_SolvingForT">Solving for T</string>
+    <string name="GASLAW_SolvingForV1">Solving for V1</string>
+    <string name="GASLAW_SolvingForV2">Solving for V2</string>
+    <string name="GASLAW_SolvingForP1">Solving for P1</string>
+    <string name="GASLAW_SolvingForP2">Solving for P2</string>
+    <string name="GASLAW_SolvingForT1">Solving for T1</string>
+    <string name="GASLAW_SolvingForT2">Solving for T2</string>
+    <string name="MOLARMASS_GPM">"Grams per Mole: "</string>
+    <string name="MOLARMASS_MassFraction">"Mass Fraction: "</string>
+    <string name="MOLARMASS_MoleFraction">"Mole Fraction: "</string>
+    <string name="MOLARMASS_EmpiricalFormula">"Empirical Formula: "</string>
+    <string name="MOLARMASS_MolesMass">"MolesMass: "</string>
+    <string name="DialogBOOKMARKS_AddBookmark">Add Bookmark</string>
+    <string name="DialogBOOKMARKS_Cancel">Cancel</string>
+    <string name="DialogBOOKMARKS_Add">Add</string>
+    <string name="DialogBOOKMARKS_AddDescriptionIcon">Add Description &amp; Icon</string>
+    <string name="DialogBOOKMARKS_BookmarkName">Enter bookmark name</string>
+    <string name="DialogBOOKMARKS_ChangeIcon">Change Icon</string>
+    <string name="DialogBOOKMARKS_Description">Description:</string>
+    <string name="DialogBOOKMARKS_Name">Name:</string>
+    <string name="DialogBOOKMARKS_AddDescription">Enter bookmark description</string>
+    <string name="DialogBOOKMARKS_Icon1">icon 1</string>
+    <string name="DialogBOOKMARKS_Icon2">icon 2</string>
+    <string name="DialogBOOKMARKS_Icon3">icon 3</string>
+    <string name="DialogBOOKMARKS_Icon4">icon 4</string>
+    <string name="DialogBOOKMARKS_Icon5">icon 5</string>
+    <string name="DialogBOOKMARKS_Icon6">icon 6</string>
+    <string name="DialogBOOKMARKS_Icon7">icon 7</string>
+    <string name="DialogBOOKMARKS_Icon8">icon 8</string>
+    <string name="DialogBOOKMARKS_Icon9">icon 9</string>
+    <string name="DialogBOOKMARKS_Icon10">icon 10</string>
+    <string name="DialogBOOKMARKS_Icon11">icon 11</string>
+    <string name="DialogBOOKMARKS_Icon12">icon 12</string>
+    <string name="DialogBOOKMARKS_Icon13">icon 13</string>
+    <string name="DialogBOOKMARKS_Icon14">icon 14</string>
+    <string name="DialogBOOKMARKS_Icon15">icon 15</string>
+    <string name="DialogBOOKMARKS_Icon16">icon 16</string>
+    <string name="invalid_category_for_position_">"Invalid category for position: "</string>
+    <string name="DialogBOOKMARKS_Bookmarks">Bookmarks</string>
+    <string name="DialogBOOKMARKS_Close">Close</string>
+    <string name="DialogBOOKMARKS_Delete">Delete</string>
+    <string name="DialogBOOKMARKS_DeleteMode">Delete Mode</string>
+    <string name="TOOLS_MolarMass">Molar Mass</string>
+    <string name="TOOLS_GasLaws">Gas Laws</string>
+    <string name="DialogANSWER_ShowWork">Show Work</string>
+    <string name="PlaceHolder_TIME">Time</string>
+    <string name="PlaceHolder_PROGRESS">Progress</string>
+    <string name="PlaceHolder_CORRECT">Correct</string>
+    <string name="PlaceHolder_QUESTION">Question</string>
+    <string name="QUIZ_Correct">"Percent Correct: "</string>
+    <string name="QUIZ_ElapsedTime">"Elapsed Time: "</string>
+    <string name="QUIZ_Results">Quiz Results</string>
+    <string name="QUIZ_Next">Next</string>
+    <string name="QUIZ_Previous">Previous</string>
+    <string name="QUIZ_TryAgain">Try Again</string>
+    <string name="QUIZ_GoBack">Go Back</string>
+    <string name="DialogCONFIRM_Yes">Yes</string>
+    <string name="DialogCONFIRM_No">No</string>
+    <string name="QUIZ_TimeLimit">"Time Limit: "</string>
+    <string name="QUIZ_QuizType">"Quiz Type:  "</string>
+    <string name="QUIZ_Category">"Category:   "</string>
+    <string name="QUIZ_ReadyQuiz">You are about to take a quiz!</string>
+    <string name="QUIZ_Start">Start!</string>
+    <string name="QUIZ_TotalQuestions">"Total Questions: "</string>
+    <string name="QUIZ_TakeQuiz">Take Quiz!</string>
+    <string name="QUIZ_Content">"Content: "</string>
+    <string name="QUIZ_CONTENT_PeriodicTable">Periodic Table</string>
+    <string name="QUIZ_CONTENT_PeriodicElements">Periodic Elements</string>
+    <string name="QUIZ_TYPE">Quiz Type:</string>
+    <string name="QUIZ_TYPE_MultipleChoice">Multiple Choice</string>
+    <string name="QUIZ_TYPE_FreeResponse">Free Response</string>
+    <string name="QUIZ_Quiz">Quiz</string>
+    <string name="QUIZ_SavedQuiz">Saved Quiz</string>
+    <string name="QUIZ_SavedQuizes">Saved Quizzes:</string>
+    <string name="QUIZ_CreateNewQuiz">Create New Quiz</string>
+    <string name="QUIZ_Separator">:</string>
+    <string name="dialogUpdate_Later">Later</string>
+    <string name="dialogUpdate_Yes">Yes</string>
+    <string name="dialogUpdate_UpdateAvailable">Update Available!</string>
+    <string name="dialogUpdate_UpdateText">A new update is available!\nWould you like to download it?\n\nThis update includes:</string>
+    <string name="dialogUpdate_Required">*Update required due to beta.</string>
+    <string name="DEBUG_DebugLog">Debug Log</string>
+    <string name="DEBUG_ErrorLog">Error Log</string>
+    <string name="DEBUG_AppConfig">App Config</string>
+    <string name="DEBUG_ActivatePro">Activate Pro</string>
+    <string name="DEBUG_ForceStop">Force Stop</string>
+    <string name="DEBUG_ClearData">Clear Data</string>
+    <string name="DEBUG_TestError">Test Error</string>
+    <string name="DEBUG_Exit">Exit</string>
+    <string name="DEBUG_Show">Show</string>
+    <string name="DEBUG_Test">Test</string>
+    <string name="DEBUG_Clear">Clear</string>
+    <string name="DEBUG_GetUpdate">Get Update</string>
+
+</resources>

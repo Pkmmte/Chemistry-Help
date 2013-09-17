@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/Warning_Label"
+		android:title=""
+		android:showAsAction="always"
+		android:icon="@drawable/warning"
+		android:visible="false"/>
+</menu>

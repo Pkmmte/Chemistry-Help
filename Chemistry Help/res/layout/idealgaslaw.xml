@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_EnterVariables"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewDefaultUnits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_Reminder" />
+
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/GASLAW_N" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerN"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextN"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerN"
+                    android:ems="10"
+                    android:hint="@string/blankForN"
+                    android:inputType="numberDecimal|numberSigned" >
+                </EditText>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_P" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerP"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerP"
+                    android:ems="10"
+                    android:hint="@string/blankForP"
+                    android:inputType="numberDecimal|numberSigned" >
+                </EditText>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_V" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerV"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerV"
+                    android:ems="10"
+                    android:hint="@string/blankForV"
+                    android:inputType="numberDecimal|numberSigned" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_T" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerT"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextT"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerT"
+                    android:ems="10"
+                    android:hint="@string/blankForT"
+                    android:inputType="numberDecimal|numberSigned" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/black_white_gradient"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Formula"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_menu_background"
+            android:text="@string/GASLAW_Formula"
+            android:textColor="@color/button_dark_text" />
+
+        <Button
+            android:id="@+id/Solve"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_menu_background"
+            android:text="@string/GASLAW_Solve"
+            android:textColor="@color/button_dark_text" />
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_menu_background"
+            android:text="@string/GASLAW_Clear"
+            android:textColor="@color/button_dark_text" />
+    </LinearLayout>
+
+</LinearLayout>

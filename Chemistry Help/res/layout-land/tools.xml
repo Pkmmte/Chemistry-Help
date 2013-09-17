@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/gasLaws"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/molarmass"
+            android:background="@drawable/selector_gaslaws"
+            android:contentDescription="@string/TOOLS_GasLaws" />
+
+        <ImageButton
+            android:id="@+id/molarmass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/TOOLS_MolarMass"
+            android:background="@drawable/selector_molarmass" />
+
+        <ImageButton
+            android:id="@+id/periodicTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/molarmass"
+            android:background="@drawable/selector_periodictable"
+            android:contentDescription="@string/MENU_PeriodicTable" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/chemicalSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/Conversions"
+            android:background="@drawable/selector_chemicalsearch"
+            android:contentDescription="@string/MENU_ChemicalSearch" />
+
+        <ImageButton
+            android:id="@+id/Conversions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_convert"
+            android:contentDescription="@string/MENU_Convert" />
+    </RelativeLayout>
+
+</LinearLayout>

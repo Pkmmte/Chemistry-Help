@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/TakeQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/QUIZ_TakeQuiz" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:text="@string/PlaceHolder_VALUE"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/quizType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/Quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onSelectQuizType"
+            android:text="@string/QUIZ_Quiz" />
+
+        <RadioButton
+            android:id="@+id/SavedQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSelectQuizType"
+            android:text="@string/QUIZ_SavedQuiz" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/timelimitQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTimeLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QUIZ_TimeLimit" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/timeLimitSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/QUIZ_Separator"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/timeLimitMinutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/timeLimitSeparator"
+                android:ems="10"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/timeLimitSeconds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/timeLimitSeparator"
+                android:ems="10"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/typeQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTypeQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QUIZ_TYPE" />
+
+        <RadioGroup
+            android:id="@+id/typeQuizGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/MultipleChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="onSelectResponseType"
+                android:text="@string/QUIZ_TYPE_MultipleChoice" />
+
+            <RadioButton
+                android:id="@+id/FreeResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onSelectResponseType"
+                android:text="@string/QUIZ_TYPE_FreeResponse" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QUIZ_Content" />
+
+        <CheckBox
+            android:id="@+id/checkPeriodicTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckContentClicked"
+            android:text="@string/QUIZ_CONTENT_PeriodicTable" />
+
+        <CheckBox
+            android:id="@+id/checkPeriodicElements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckContentClicked"
+            android:text="@string/QUIZ_CONTENT_PeriodicElements" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentSavedQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textSavedQuizes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QUIZ_SavedQuizes" />
+
+        <Button
+            android:id="@+id/newQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/QUIZ_CreateNewQuiz" />
+
+        <TextView
+            android:id="@+id/errorCreateNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PlaceHolder_VALUE"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dp"
+        android:paddingTop="10dp"
+        android:text="@string/DialogBOOKMARKS_Name" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/DialogBOOKMARKS_BookmarkName"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DialogBOOKMARKS_AddDescriptionIcon" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="1dp"
+        android:text="@string/DialogBOOKMARKS_Description"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/DialogBOOKMARKS_AddDescription"
+        android:inputType="textMultiLine"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0" >
+
+                <ImageView
+                    android:id="@+id/imageIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:contentDescription="@string/PlaceHolder_VALUE"
+                    android:src="@drawable/addbookmark_icon" />
+
+                <Button
+                    android:id="@+id/changeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".70"
+                    android:text="@string/DialogBOOKMARKS_ChangeIcon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Iconset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1.0" >
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon1"
+                        android:src="@drawable/addbookmark_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon2"
+                        android:src="@drawable/bookmarks_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon3"
+                        android:src="@drawable/lussac_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon4"
+                        android:src="@drawable/periodic_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1.0" >
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon5"
+                        android:src="@drawable/boyles_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon6"
+                        android:src="@drawable/charles_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon7"
+                        android:src="@drawable/combined_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon8"
+                        android:src="@drawable/ideal_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1.0" >
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon9"
+                        android:src="@drawable/display_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon10"
+                        android:src="@drawable/gas_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon11"
+                        android:src="@drawable/convert_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon12"
+                        android:src="@drawable/study_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1.0" >
+
+                    <ImageButton
+                        android:id="@+id/imageButton13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon13"
+                        android:src="@drawable/practice_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon14"
+                        android:src="@drawable/delete_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon15"
+                        android:src="@drawable/extra_icon" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:contentDescription="@string/DialogBOOKMARKS_Icon16"
+                        android:src="@drawable/warning" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <View
+            android:id="@+id/ViewColorPickerHelper"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/BtnColorPickerCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/ViewColorPickerHelper"
+            android:background="@color/button_blue_background"
+            android:paddingTop="5dp"
+            android:text="@string/DialogBOOKMARKS_Cancel"
+            android:textColor="@color/button_dark_text" />
+
+        <Button
+            android:id="@+id/BtnColorPickerOk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/ViewColorPickerHelper"
+            android:background="@color/button_blue_background"
+            android:text="@string/DialogBOOKMARKS_Add"
+            android:textColor="@color/button_dark_text" />
+    </RelativeLayout>
+
+</LinearLayout>

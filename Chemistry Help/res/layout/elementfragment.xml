@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/cyan" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/black"
+            android:orientation="vertical" >
+
+            <!--
+                 <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/app_icon" />
+
+            -->
+
+            <TextView
+                android:id="@+id/Element"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/PlaceHolder_VALUE"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <!-- </LinearLayout> -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blue_black_gradient_vertical" />
+
+            <!-- </RelativeLayout> -->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textBasicProperties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Basic Properties"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Name: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/NameValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textName"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textSymbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Symbol: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/SymbolValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textSymbol"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textAtomicNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Atomic Number: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/AtomicNumberValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textAtomicNumber"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textAtomicMass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Atomic Mass: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/AtomicMassValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textAtomicMass"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textProtonNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Number of Protons: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ProtonNumberValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textProtonNumber"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textNeutronNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Number of Neutrons: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/NeutronNumberValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textNeutronNumber"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textElectronNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Number of Electrons: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ElectronNumberValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textElectronNumber"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textClassification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Classification: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ClassificationValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textClassification"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textMeltingPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Melting Point: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/MeltingPointValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textMeltingPoint"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textBoilingPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="10dp"
+                            android:text="Boiling Point: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/BoilingPointValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textBoilingPoint"
+                            android:paddingLeft="5dp"
+                            android:text="@string/PlaceHolder_VALUE" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_EnterVariables"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textViewDefaultUnits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_Reminder" />
+
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/GASLAW_V1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerV1"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextV1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerV1"
+                    android:ems="10"
+                    android:hint="@string/blankForV1"
+                    android:inputType="numberDecimal|numberSigned" >
+                </EditText>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_P1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerP1"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextP1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerP1"
+                    android:ems="10"
+                    android:hint="@string/blankForP1"
+                    android:inputType="numberDecimal|numberSigned" >
+                </EditText>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_V2" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerV2"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextV2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerV2"
+                    android:ems="10"
+                    android:hint="@string/blankForV2"
+                    android:inputType="numberDecimal|numberSigned" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GASLAW_P2" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/spinnerP2"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <EditText
+                    android:id="@+id/editTextP2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/spinnerP2"
+                    android:ems="10"
+                    android:hint="@string/blankForP2"
+                    android:inputType="numberDecimal|numberSigned" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/black_white_gradient"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Formula"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_menu_background"
+            android:text="@string/GASLAW_Formula"
+            android:textColor="@color/button_dark_text" />
+
+        <Button
+            android:id="@+id/Solve"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_menu_background"
+            android:text="@string/GASLAW_Solve"
+            android:textColor="@color/button_dark_text" />
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_menu_background"
+            android:text="@string/GASLAW_Clear"
+            android:textColor="@color/button_dark_text" />
+    </LinearLayout>
+
+    <!--
+The way I wanted my UI originally. With real vertical lines. This never worked...
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/ButtonTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/button_blue_background"
+            android:text="Solve"
+            android:textColor="@color/button_dark_text" />
+
+        <View
+            android:id="@+id/ViewTwo"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ButtonThree"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/ButtonThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ButtonTwo"
+            android:background="@color/button_blue_background"
+            android:text="Clear"
+            android:textColor="@color/button_dark_text" />
+
+        <View
+            android:id="@+id/ViewOne"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ButtonOne"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/ButtonOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ButtonTwo"
+            android:background="@color/button_blue_background"
+            android:paddingTop="5dp"
+            android:text="Formula"
+            android:textColor="@color/button_dark_text" />
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

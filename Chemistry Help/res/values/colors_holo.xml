@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="focused_holo">#8833B5E5</color>
+	<color name="pressed_holo">#CC33B5E5</color>
+	<color name="invisible_black">#00000000</color>
+</resources>

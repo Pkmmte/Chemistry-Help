@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/gasLaws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_gaslaws"
+                android:contentDescription="@string/TOOLS_GasLaws"
+				android:onClick="toolsSelection"
+				android:tag="Gas Laws"
+                android:paddingTop="5dp" />
+
+            <ImageButton
+                android:id="@+id/periodicTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_periodictable"
+                android:contentDescription="@string/MENU_PeriodicTable"
+				android:onClick="toolsSelection"
+				android:tag="Periodic Table"
+                android:paddingTop="5dp" />
+
+            <ImageButton
+                android:id="@+id/Conversions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_convert"
+                android:contentDescription="@string/MENU_Convert"
+				android:onClick="toolsSelection"
+				android:tag="Convert"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/molarmass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_molarmass"
+				android:onClick="toolsSelection"
+				android:tag="Molar Mass"
+                android:contentDescription="@string/TOOLS_MolarMass" />
+
+            <ImageButton
+                android:id="@+id/chemicalSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_chemicalsearch"
+				android:onClick="toolsSelection"
+				android:tag="Chemical Search"
+                android:contentDescription="@string/MENU_ChemicalSearch" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

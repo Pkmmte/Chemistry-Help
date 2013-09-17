@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/PlaceHolder_VALUE"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/addbookmark_icon" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Icon"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:text="@string/PlaceHolder_VALUE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_toRightOf="@+id/Icon"
+        android:paddingBottom="10dp"
+        android:paddingLeft="7dp"
+        android:text="@string/PlaceHolder_VALUE"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/PlaceHolder_VALUE"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/delete_icon" />
+
+</RelativeLayout>

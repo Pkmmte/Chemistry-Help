@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <View
+                android:id="@+id/Middle"
+                android:layout_width="2dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/black_white_gradient"
+                android:minHeight="125dp"
+                android:src="@drawable/black_white_gradient"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/gasLaws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/Middle"
+                android:background="@drawable/selector_gaslaws"
+                android:contentDescription="@string/TOOLS_GasLaws"
+                android:paddingTop="5dp" />
+
+            <ImageButton
+                android:id="@+id/molarmass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/Middle"
+                android:background="@drawable/selector_molarmass"
+                android:contentDescription="@string/TOOLS_MolarMass" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <View
+                android:id="@+id/Middle"
+                android:layout_width="2dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/black_white_gradient"
+                android:minHeight="125dp"
+                android:src="@drawable/black_white_gradient"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/periodicTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/Middle"
+                android:background="@drawable/selector_periodictable"
+                android:contentDescription="@string/MENU_PeriodicTable"
+                android:paddingTop="5dp" />
+
+            <ImageButton
+                android:id="@+id/chemicalSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/Middle"
+                android:background="@drawable/selector_chemicalsearch"
+                android:contentDescription="@string/MENU_ChemicalSearch" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <View
+                android:id="@+id/Middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/black_white_gradient"
+                android:minHeight="125dp"
+                android:src="@drawable/black_white_gradient"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/Conversions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/Middle"
+                android:background="@drawable/selector_convert"
+                android:contentDescription="@string/MENU_Convert"
+                android:paddingTop="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

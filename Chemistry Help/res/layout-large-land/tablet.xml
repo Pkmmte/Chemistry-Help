@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/ListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            class="com.pk.chemhelp.NewGasLaws$GasListFragment" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="50dp"
+        android:layout_weight="4" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/black_white_gradient"
+                android:layout_below="@+id/LawsPagers"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Formula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/button_menu_background"
+                    android:text="@string/GASLAW_Formula"
+                    android:textColor="@color/button_dark_text" />
+
+                <Button
+                    android:id="@+id/Solve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/button_menu_background"
+                    android:text="@string/GASLAW_Solve"
+                    android:textColor="@color/button_dark_text" />
+
+                <Button
+                    android:id="@+id/Clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/button_menu_background"
+                    android:text="@string/GASLAW_Clear"
+                    android:textColor="@color/button_dark_text" />
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/LawsPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

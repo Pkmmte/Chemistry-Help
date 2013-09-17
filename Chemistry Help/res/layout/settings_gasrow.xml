@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout0"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:paddingTop="2sp" >
+
+    <TextView
+        android:id="@+id/ListHeader"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingLeft="7sp"
+        android:paddingRight="7sp"
+        android:paddingTop="2dip"
+        android:text="@string/PlaceHolder_VALUE"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="2sp" >
+
+            <TextView
+                android:id="@+id/Item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PlaceHolder_VALUE"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Description"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/PlaceHolder_VALUE"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="@string/PlaceHolder_VALUE"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:src="@drawable/checkbox_on" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/DividerRow"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/blue_black_gradient" />
+
+</LinearLayout>

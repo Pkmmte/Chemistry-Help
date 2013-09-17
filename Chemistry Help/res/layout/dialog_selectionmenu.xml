@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <Button
+            android:id="@+id/Select1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/button_blue_background"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/dialogUpdated_Close"
+            android:textColor="@color/button_dark_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="left" >
+
+        <View
+            android:id="@+id/View2"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/Select2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/button_blue_background"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/dialogUpdated_Close"
+            android:textColor="@color/button_dark_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:id="@+id/View3"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/Select3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/button_blue_background"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/dialogUpdated_Close"
+            android:textColor="@color/button_dark_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:id="@+id/View4"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/Select4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/button_blue_background"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/dialogUpdated_Close"
+            android:textColor="@color/button_dark_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:id="@+id/View5"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/Select5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/button_blue_background"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/dialogUpdated_Close"
+            android:textColor="@color/button_dark_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative6"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:id="@+id/View6"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/Select6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/button_blue_background"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/dialogUpdated_Close"
+            android:textColor="@color/button_dark_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative7"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:id="@+id/View7"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@drawable/black_white_gradient" />
+
+        <Button
+            android:id="@+id/Select7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/button_blue_background"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/dialogUpdated_Close"
+            android:textColor="@color/button_dark_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
